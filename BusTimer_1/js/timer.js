@@ -32,55 +32,54 @@
 */
 const timeTable = {
   hour: [
-    7, 18, 19, 20, 24
+    7, 18, 19, 20, 23
   ],
   min: [
-    36, 33, 10, 40, 40
+    36, 33, 10, 40, 59
   ]
 }
-
-var i = 0;
-var j = 0;
-var flag =0;
-
-
 
 
 time();
 function time(){
 
+  var i = 0;
+  var j = 0;
+  var flag =0;
 
-  	//var now = new Date();
-  	//document.getElementById("time").innerHTML = now.toLocaleTimeString();
-  	var current = new Date();      //[cur-] 現在時刻
-    var curHour = Number(current.getHours());
-    var curMin = Number(current.getMinutes());
-    var curSec = Number(current.getSeconds());
+	//var now = new Date();
+  //document.getElementById("time").innerHTML = now.toLocaleTimeString();
 
-    //var nextHour = Date.parse(timeTable.hour[0]);   //[next-] 直近で到着するバス
-    var nextHour = Number(timeTable.hour[0]);
-    var nextMin = Number(timeTable.min[0]);
+  var current = new Date();      //[cur-] 現在時刻
+  var curHour = Number(current.getHours());
+  var curMin = Number(current.getMinutes());
+  var curSec = Number(current.getSeconds());
 
 
-    while(curHour > nextHour){    //現在の[時]のみが到着予定時刻を過ぎた場合
-      i++;
-      var nextHour = Number(timeTable.hour[i]);
-      var nextMin = Number(timeTable.min[i]);
+  //var nextHour = Date.parse(timeTable.hour[0]);   //[next-] 直近で到着するバス
+  var nextHour = Number(timeTable.hour[0]);
+  var nextMin = Number(timeTable.min[0]);
 
+
+  while(curHour > nextHour){    //現在の[時]のみが到着予定時刻を過ぎた場合
+    i++;
+    var nextHour = Number(timeTable.hour[i]);
+    var nextMin = Number(timeTable.min[i]);
+
+  }
+
+  console.log(i);
+
+  if(curHour == nextHour){
+    while(curMin > nextMin){
+      j++;
+      var nextMin = Number(timeTable.min[j]);
     }
-
-    console.log(i);
-
-    if(curHour == nextHour){
-      while(curMin > nextMin){
-        j++;
-        var nextMin = Number(timeTable.min[j]);
-      }
-    }
-    else if((curHour < nextHour) && (curMin > nextMin)){
-      curHour += 1;
-      nextMin += 60;
-    }
+  }
+  else if((curHour < nextHour) && (curMin > nextMin)){
+    curHour += 1;
+    nextMin += 60;
+  }
 
 
   //console.log(flag);
