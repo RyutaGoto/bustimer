@@ -47,16 +47,14 @@ function time(){
   var j = 0;
   var flag =0;
 
-	//var now = new Date();
-  //document.getElementById("time").innerHTML = now.toLocaleTimeString();
-
-  var current = new Date();      //[cur-] 現在時刻
+  //[cur-] 現在時刻
+  var current = new Date();
   var curHour = Number(current.getHours());
   var curMin = Number(current.getMinutes());
   var curSec = Number(current.getSeconds());
 
 
-  //var nextHour = Date.parse(timeTable.hour[0]);   //[next-] 直近で到着するバス
+ //[next-] 直近で到着するバス
   var nextHour = Number(timeTable.hour[0]);
   var nextMin = Number(timeTable.min[0]);
 
