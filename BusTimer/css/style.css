@@ -2,32 +2,70 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 20;
 	background-color: #000;
 }
 
-ul{
+ ul{
   list-style-type: none;
   padding-left: 0;
 }
 
-li{
-  background-color: #999;
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-#container {
-  width: 100%;
+#container_select {
+  margin-left: 90px;
+  margin-right: 50px;
+  width: auto;
+  background-color: #111;
   color: #fff;
   text-align: center;
-  display: table;
 }
 
-#container h1{
-  font-size: 12px;
+#container_select h1{
+  font-size: 13px;
+  text-align: left;
 }
+
+#container_select ul{
+  text-align: justify;
+  background-color: #333;
+}
+
+#container_select ul:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+#container_select li{
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-block;
+  text-align: center;
+  background-color: #222;
+}
+
+#container_stop{
+  margin-right: 50px;
+  margin-left: 90px;
+  width: auto;
+  background-color: #111;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+
+#container_stop li{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+
+
+
 
 #time {
 	width: 100%;
@@ -39,4 +77,13 @@ li{
 
 #time_table{
 	color: #fff;
+}
+
+
+
+#time_table li{
+  background-color: #999;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
