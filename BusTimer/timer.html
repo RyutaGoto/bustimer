@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Timer</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <title>Timer</title>
+      <!-- <link rel="stylesheet" href="css/style.css"> <!-- オリジナルのCSS-->
+      <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- BootstrapのCSS-->
+      <script src="js/jquery-3.3.1.min.js"></script> <!-- jQuery-->
+      <script src="js/bootstrap/bootstrap.min.js"></script> <!-- BootstrapのJS-->
+  </head>
 
-<body>
-  <div>
-    <div id="container_select">
-      <h1>残り</h1>
-      <h1>test</h1>
-      <div id="time">
+  <body>
+    <div>
+      <div id="container_select">
+        <h1>残り</h1>
+        <div id="time">
+        </div>
+
+        <div id="time_table">
+          <ul>
+            <li>前</li>
+            <li>現在</li>
+            <li>次</li>
+          </ul>
+        </div>
       </div>
-
-    <div id="time_table">
-      <ul>
-        <li>前</li>
-        <li>現在</li>
-        <li>次</li>
-      </ul>
     </div>
-
-    </div>
-
-  </div>
-
-
-
     <script src="js/timer.js"></script>
-
-</body>
+  </body>
 </html>
