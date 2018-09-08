@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="utf-8  "
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Top</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> <!-- オリジナルのCSS-->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> <!-- BootstrapのCSS-->
-    <script src="js/jquery-3.3.1.min.js"></script> <!-- jQuery-->
-    <script src="js/bootstrap/bootstrap.min.js"></script> <!-- BootstrapのJS-->
-</head>
+  <head>
+      <meta charset="utf-8  "
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <title>Top</title>
+      <!-- <link rel="stylesheet" href="css/style.css"> <!-- オリジナルのCSS-->
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> <!-- BootstrapのCSS-->
+      <script src="js/jquery-3.3.1.min.js"></script> <!-- jQuery-->
+      <script src="js/bootstrap/bootstrap.min.js"></script> <!-- BootstrapのJS-->
+  </head>
 
-<body>
-  <div id="container">
-    <div id="container_select">
-      <h1>行先</h1>
-      <div class="text-center">
-        <ul class="list-unstyled d-inline-block text-left">
-            <li>上り</li>
-            <li>下り</li>
-        </ul>
-      </div>
-      <h1>曜日</h1>
-      <div class="text-center">
-        <ul class="list-unstyled d-inline-block text-left">
-          <li>平日</li>
-          <li>土日祝</li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="container_stop">
-        <h1>停留所</h1><br>
+  <body>
+    <div id="container">
+      <div id="container_select">
+        <h5 class="col-md-1">行先</h5>
         <div class="text-center">
           <ul class="list-unstyled d-inline-block text-left">
-            <li>  <input type="radio" class="" name="btn1" value="赤川入口">赤川入口</li>
-            <li><input type="radio" class="" name="btn2" value="低区貯水池">低区貯水池</li>
-            <li><input type="radio" class="" name="btn3" value="はこだて未来大学">はこだて未来大学</li>
-            <li><input type="radio" class="" name="btn4" value="函館駅前">函館駅前</li>
+              <li>上り</li>
+              <li>下り</li>
           </ul>
         </div>
+        <h5>曜日</h5>
+        <div class="text-center">
+          <ul class="list-unstyled d-inline-block text-left">
+            <li>平日</li>
+            <li>土日祝</li>
+          </ul>
+        </div>
+      </div>
 
+      <div id="container_stop">
+        <h5>停留所</h5><br>
+        <div class="text-center">
+          <ul class="list-unstyled d-inline-block text-left" id="list">
+            <li>  <input type="radio" class="" name="btn">赤川入口</li>
+            <li><input type="radio" class="" name="btn">低区貯水池</li>
+            <li><input type="radio" class="" name="btn">はこだて未来大学</li>
+            <li><input type="radio" class="" name="btn">函館駅前</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
+    <script src="js/top.js"></script>
+  </body>
 </html>
