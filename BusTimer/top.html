@@ -15,7 +15,7 @@
       <div id="container_select">
         <h5 class="col-md-1">行先</h5>
         <div class="text-center" class="alignment" data-toggle="buttons-radio">
-          <input type="hidden" name="sample" value="" />
+          <input type="hidden" name="sample" id="direction" value="" />
           <button type="button" class="btn btn-info" value="1">上り</button>
           <button type="button" class="btn btn-info" value="2">下り</button>
           <!--
@@ -27,7 +27,7 @@
         </div>
         <h5>曜日</h5>
         <div class="text-center" class="alignment" data-toggle="buttons-radio">
-          <input type="hidden" name="sample" value="" />
+          <input type="hidden" name="sample" id="day" value="" />
           <button type="button" class="btn btn-info" value="1">平日</button>
           <button type="button" class="btn btn-info" value="2">休日</button>
           <!--
@@ -42,11 +42,11 @@
       <div id="container_stop">
         <h5>停留所</h5><br>
         <div class="text-center">
-          <ul class="list-unstyled d-inline-block text-left" id="list">
-            <li>  <input type="radio" class="" name="btn">赤川入口</li>
-            <li><input type="radio" class="" name="btn">低区貯水池</li>
-            <li><input type="radio" class="" name="btn">はこだて未来大学</li>
-            <li><input type="radio" class="" name="btn">函館駅前</li>
+          <ul class="list-unstyled d-inline-block text-left" id="busStop">
+            <li>  <input type="radio" class="" name="stop">赤川入口</li>
+            <li><input type="radio" class="" name="stop">低区貯水池</li>
+            <li><input type="radio" class="" name="stop">はこだて未来大学</li>
+            <li><input type="radio" class="" name="stop">函館駅前</li>
           </ul>
         </div>
       </div>

@@ -3,12 +3,23 @@ getInfo();
 
 
 function getInfo(){
-  var stopList = document.getElementById('list');     // document 全体から id="list" の要素を取得 (バス停の<ul>取得)
-  var busStop = stopList.getElementsByTagName('li');  // バス停の <ul> から <li> 取得
+  /* 方向の取得 */
+  var directionTemp = document.getElementById('direction');
+  var directionList = directionTemp.getElementsByTagName('button');
 
-  for (var i = 0; i < busStop.length; i++) {
-    if(busStop[i].checked){
-      console.log(busStop[i].textContent);  
-    }
+  /* 曜日の取得 */
+  var dayTemp = document.getElementById('day');
+  var dayList = dayTemp.getElementsByTagName('button');
+
+  /* 停留所の取得 */
+  var stopTemp = document.getElementById('busStop');
+  var stopList = stopTemp.getElementsByTagName('li');
+
+
+  for (var i = 0; i < stopList.length; i++) {
+    //if(stopList[i].checked){
+      console.log(stopList[i].textContent);
+      console.log(i);
+    //}
   }
 }
