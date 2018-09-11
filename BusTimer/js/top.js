@@ -1,8 +1,8 @@
 
-getInfo();
+/* 決定ボタンの取得 */
+var submitBtn = document.getElementById('submit');
 
-
-function getInfo(){
+submitBtn.onclick = function(){
   /* 方向の取得 */
   var directionTemp = document.getElementById('direction');
   var directionList = directionTemp.getElementsByTagName('button');
@@ -14,12 +14,16 @@ function getInfo(){
   /* 停留所の取得 */
   var stopTemp = document.getElementById('busStop');
   var stopList = stopTemp.getElementsByTagName('li');
-
+  //var stopList = stopTemp.getElementById('st');
 
   for (var i = 0; i < stopList.length; i++) {
-    //if(stopList[i].checked){
+    var check = stopList[i].checked;
+    if(check == true){
       console.log(stopList[i].textContent);
       console.log(i);
-    //}
+    }
+    else{
+      console.log("押されてないよ");
+    }
   }
-}
+};
